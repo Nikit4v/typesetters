@@ -6,8 +6,9 @@ export enum WorkStatus {
 
 
 export interface MemberWork {
-  ordinal: number;
-  name: string | null;
+  ep_ordinal: number;
+  ep_name: string | null;
+  rel_name: string
   status: WorkStatus
 }
 

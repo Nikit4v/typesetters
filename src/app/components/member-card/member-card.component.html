@@ -1,5 +1,28 @@
-<div class="rounded-2xl w-[500px] h-40 border-gray-600 border p-2">
-  <div class="text-xl ">
+<div class="rounded-2xl w-[500px] border-gray-600 border overflow-hidden">
+  <div class="text-xl m-4">
     {{data.name}}
   </div>
+  <table class="w-full h-max">
+    <tr *ngFor="let i of data.works;" class="border-gray-600 group rounded-2xl
+    border-collapse border-t-[1px] w-full transition-colors duration-200
+    {{selectBackground(i.status)}}">
+      <td class="w-min p-1 px-2 group-hover:py-4 h-8 transition-all w-60 group-hover:h-max ">
+        <p class="whitespace-nowrap w-60 text-ellipsis h-6 overflow-hidden">
+          {{i.rel_name}}
+        </p>
+      </td>
+      <td class="w-min p-1 px-2 group-hover:py-4 transition-all">
+        →
+      </td>
+      <td class="p-1 px-2 group-hover:py-4 transition-all">
+        {{i.ep_ordinal}}
+      </td>
+      <td class="p-1 px-2 group-hover:py-4 transition-all">
+        {{i.ep_name || ""}}
+      </td>
+      <td class="w-min text-right p-1 px-2 group-hover:py-4 transition-all whitespace-nowrap">
+          {{convertStatus(i.status)}}
+      </td>
+    </tr>
+  </table>
 </div>

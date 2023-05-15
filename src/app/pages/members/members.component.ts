@@ -15,23 +15,27 @@ export class MembersComponent {
       name: "Diabl",
       works: [
         {
-          ordinal: 1,
-          name: null,
+          ep_ordinal: 1,
+          ep_name: null,
+          rel_name: "Tonikaku Kawaii",
           status: WorkStatus.Done
         },
         {
-          ordinal: 2,
-          name: null,
-          status: WorkStatus.Done
-        },
-        {
-          ordinal: 3,
-          name: null,
+          ep_ordinal: 1,
+          ep_name: null,
+          rel_name: "Isekai wa Smartphone to Tomo ni. 2",
           status: WorkStatus.InProgress
         },
         {
-          ordinal: 4,
+          ep_ordinal: 2,
+          ep_name: null,
+          rel_name: "Tonikaku Kawaii",
+          status: WorkStatus.InProgress
+        },
+        {
+          ep_ordinal: 2,
           name: null,
+          rel_name: "Isekai wa Smartphone to Tomo ni. 2",
           status: WorkStatus.Planned
         }
       ]
@@ -40,26 +44,30 @@ export class MembersComponent {
       name: "Neri",
       works: [
         {
-          ordinal: 1,
-          name: null,
+          ep_ordinal: 1,
+          ep_name: "Кафе",
+          rel_name: "Kawaisuki Crisis",
           status: WorkStatus.Done
         },
         {
-          ordinal: 2,
-          name: null,
+          ep_ordinal: 1,
+          ep_name: null,
+          rel_name: "Lycoris Recoil",
           status: WorkStatus.Done
         },
         {
-          ordinal: 3,
-          name: null,
+          ep_ordinal: 2,
+          ep_name: "Доброе утро!",
+          rel_name: "Kawaisuki Crisis",
           status: WorkStatus.InProgress
         },
         {
-          ordinal: 4,
+          ep_ordinal: 2,
           name: null,
+          rel_name: "Lycoris Recoil",
           status: WorkStatus.Planned
         }
       ]
-    }
+    },
   ], 8);
 }
